@@ -74,7 +74,7 @@ func (t *SimpleChaincode) write(stub shim.ChaincodeStubInterface, args []string)
 }
 
 // (ES) Adding new read() function per tutorial
-func (t *SimpleChaincode) read(stub shim.ChaincodeStubInterface), args []string) ([]byte, error) {
+func (t *SimpleChaincode) read(stub shim.ChaincodeStubInterface, args []string) ([]byte, error) {
 	var key, jsonResp string
 	var err error
 	
